@@ -21,3 +21,7 @@
     border: solid 2px black;
     border-radius: 3px;
 }
+
+.changes {
+    background-color: purple;
+}

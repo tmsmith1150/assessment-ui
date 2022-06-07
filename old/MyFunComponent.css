@@ -41,3 +41,7 @@
 .MyFunComponent--container div {
     margin: 10px;;
 }
+
+.changes {
+    background-color: purple;
+}

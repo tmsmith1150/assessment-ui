@@ -14,7 +14,7 @@
             ];
         },
         buildButton: function() {
-            return new Element('button', { text: "change button color to red in the old container", 
+            return new Element('button', { text: "click here to change old button color to purple", 
                                              id: "change-color-btn",
                                       className: "unhide" });
         },
@@ -33,15 +33,26 @@
                 mainDiv.appendChild(newEl);
                 mainDiv.appendChild(newBtn);
             });
-            // el.link2.addEvent('click', this.buttonClicked.bind());
-            // el.link3.addEvent('click', this.buttonClicked.bind());
+        
         },
-        // buttonClicked: function(event)  {
-        //     event.stop();
-        //     var text =  event.target.get('text');
-        //     this.setText(text);
-        //     this.fireEvent('ButtonClicked', text);
-        // },
+        buttonClicked: function()  {
+            var mainDiv = document.getElementById("content");
+            var oldBtns = document.querySelector("button");
+            document.id("change-color-btn").addEvent('click', function() {
+                oldBtns.addClass("changes");
+                mainDiv.appendChild(oldBtns);
+            });
+
+        },
+        newBtnClicked: function()  {
+            var mainDiv = document.getElementById("content");
+            var oldBtns = document.querySelector("button");
+            document.id("change-color-btn").addEvent('click', function() {
+                oldBtns.addClass("changes");
+                mainDiv.appendChild(oldBtns);
+            });
+
+        }
         // setText: function(text) {
         //     this.el.info.set('text', text);
         // }

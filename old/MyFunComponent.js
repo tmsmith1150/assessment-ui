@@ -37,6 +37,15 @@
         },
         setText: function(text) {
             this.el.info.set('text', text);
+        },
+        newBtnClicked: function()  {
+            var mainDiv = document.getElementById("content");
+            var oldBtns = document.querySelector("button");
+            document.id("change-color-btn").addEvent('click', function() {
+                oldBtns.addClass("changes");
+                mainDiv.appendChild(oldBtns);
+            });
+
         }
     });
 
