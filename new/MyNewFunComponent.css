@@ -5,7 +5,12 @@
 }
 
 #new-p {
-    background-color: pink;
+    text-align: center;
+    font-size: 30px;
+    background-image: url("./images/color-exp.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
     height: 100px;
     margin: 20px 20px 20px 20px;
     padding: 20px 20px 20px 20px;
@@ -15,11 +20,11 @@
 
 #change-color-btn {
     background-color: aqua;
-    height: 100px;
+    height: 80px;
     margin: 20px 20px 20px 20px;
     padding: 20px 20px 20px 20px;
     border: solid 2px black;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .changes {
